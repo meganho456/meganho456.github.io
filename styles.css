@@ -1,0 +1,111 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/* There was a bit of blank space on the right side of the page that was bothering me since it allowed the page to scroll sideways, so I looked up how to fix it.
+The above code comes from here: https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend
+*/
+
+.subtitle {
+    background: linear-gradient(45deg, white 0%, #ebdbb5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, white 0%, #ebdbb5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gray {
+    color: #aeb5ba;
+}
+
+.bg-gray {
+    background: #aeb5ba;
+}
+
+body {
+    background: linear-gradient(0deg, #212529 0%, #3d4757 100%);
+}
+
+main {
+    font-family: "Inter";
+    /* background: #212529;
+    background: linear-gradient(0deg, #212529 0%, #3d4757 100%); */
+    color: white;
+}
+
+p {
+    font-family: "Inter";
+}
+
+footer {
+    font-family: "Inter";
+    background-color: #2A3038;
+    color: white;
+}
+
+.profile {
+    position: relative;
+    width: 350px;
+    height: auto;
+    border: 5px solid #212529;
+}
+
+a:link {
+    color: #7da7cb;
+}
+
+a:hover {
+    color: #ebdbb5;
+}
+
+p a:hover {
+    color: #ebdbb5;
+}
+
+.bg-dark a:hover {
+    color: #ebdbb5;
+}
+
+h5 a:hover {
+    color: #ebdbb5;
+}
+
+a:visited {
+    color: #7da7cb;
+}
+
+.navbar .navbar-brand {
+    border: 1.5px solid #ebdbb5;
+    color: white;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+}
+
+.navbar .navbar-brand:hover {
+    border: 1.5px solid #ebdbb5;
+    background-color: #212529;
+    color: #ebdbb5;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+}
+
+.nav-item .nav-link {
+    color: #aeb5ba;
+}
+
+.nav-item .nav-link:hover {
+    color: #ebdbb5;
+}

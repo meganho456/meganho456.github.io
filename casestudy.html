@@ -1,0 +1,250 @@
+<html lang="en">
+    <head>
+        <title>CS220 Personal Portfolio - Megan Ho</title>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <main>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><h3 class="bi bi-house-door-fill"></h3></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Case Study Section-->
+            <section>
+                <div class="container">
+                    <div class="text-left fw-light text-gray p-2">
+                        <h5><i class="bi bi-chevron-left"></i> <a href="projects.html">Projects</a></h5>
+                    </div>
+                    <div class="text-center mb-5">
+                        <h2><span class="subtitle fs-2">Case Study: Phinder</span></h2>
+                    </div>
+                </div>
+                <div class="container text-left">
+                    <h4><span class="subtitle fw-bolder">Problem</span></h4>
+                    <p>
+                        At Wellesley, the majority of students are extremely busy. 
+                        This makes it difficult to coordinate something like a photoshoot, especially with a stranger, since the back-and-forth negotiation will quickly become tedious with an unfamiliar student. 
+                        On the other hand, many students want professional-quality photographs, particularly for their senior photos or headshots. 
+                        Then, from the perspective of the student photographer, we found from our interviews that requests are not centrally organized: photographers receive requests on a variety of platforms, which makes them difficult to keep track of.
+                    </p>
+                    <p>
+                        Thus, our group created Phinder based on the needs of such students: 
+                        our timeslot-booking model for photoshoot scheduling would reduce the hassle that students face when trying to book photography appointments, 
+                        and the centralized platform for making and receiving requests would reduce the hassle that photographers currently face when having to keep track of their commitments.
+                    </p>
+                    <h4><span class="subtitle fw-bolder">Process</span></h4>
+                    <p>
+                        Following the milestones stipulated as course assignments, we began an iterative process to prototyping and evaluating this app.
+                    </p>
+                    <h5><span class="subtitle">Initial Prototypes</span></h5>
+                    <p>
+                        Based on our contextual inquiry of the target user population, 
+                        we identified some high-level goals that we would like the app to have, 
+                        then brainstormed various designs for the app and jotted them down in the form of paper prototypes.
+                        We reduced our ideas down to two main approaches: 
+                        one design involved photographers choosing which students' photoshoot requests to take, 
+                        while the other had students choosing which photographers to request for their photoshoot.
+                    </p>
+                    <div class="row justify-content-center">
+                        <img class="col-4 m-3 align-self-center img-fluid" src="paper-1.png" alt="paper prototype of the first design's request selection screen">
+                        <img class="col-4 m-3 align-self-center img-fluid" src="paper-2.png" alt="paper prototype of the second design's photographer selection screen">
+                    </div>
+                    <div class="row justify-content-center">
+                        <p class="col-4 m-3 text-center small fw-light">Photographers select photoshoot requests that they are interested in taking.</p>
+                        <p class="col-4 m-3 text-center small fw-light">Students select photographers that they would like to be photographed by.</p>
+                    </div>
+                    <p>
+                        These paper prototypes were then presented to our CS 220 classmates, 
+                        from whom we received ample feedback and were thus able to decide on a direction to proceed in:
+                        we ended up going with the photo subject-centered design, 
+                        one reason being that the requesting side would typically have a more time-sensitive need, 
+                        so it would be ideal to have the photographers be on-demand resources that they can select from whenever needed.
+                    </p>
+                    <p>
+                        After deciding on a design, we began implementing our wireframe prototype. 
+                        This preliminary prototype of the app showed the basics of our screens, 
+                        focusing on a general overview of functionality and layout rather than implementing actual interactions or making aesthetically pleasing design choices.
+                    </p>
+                    <img class="align-self-center img-fluid" src="wireframe.png" alt="screenshot of the Figma canvas that the wireframe prototype was created on">
+                    <p class="m-3 text-center small fw-light">Our wireframe prototype, modeled on Figma.</p>
+                    <h5><span class="subtitle">Testing and Iteration</span></h5>
+                    <p>
+                        We were then able to conduct usability tests with the wireframe prototype that we had created, 
+                        since it included all basic functionality of the app. 
+                        For this purpose, we designed a testing protocol that allowed us to see if users were able to complete key tasks in the app. 
+                        Since we had two primary user bases (the photographers and photo subjects), we designed a set of tasks for each type of user; 
+                        generally, photographers were to imagine they were looking for experience and accept a photoshoot request, 
+                        while photo subjects were to imagine they were seniors hoping to have professional-quality senior photographs taken and schedule a photoshoot accordingly.
+                    </p>
+                    <img class="align-self-center img-fluid" src="wireframe testing.png" alt="screenshot of the Figma testing interface with the wireframe 'Upload Photos' screen showing">
+                    <p class="m-3 text-center small fw-light">Testing the wireframe prototype on Figma.</p>
+                    <p>
+                        After this first round of evaluation, 
+                        we were able to incorporate the feedback that we received 
+                        (that mostly involved small bugs in the interactions and changes to/additions of certain features) 
+                        in our high-fidelity prototype.
+                    </p>
+                    <p>
+                        The creation of the high-fidelity prototype started with deciding on a graphic design direction. 
+                        We tried a couple of different color palettes, 
+                        until deciding on a more muted one that did not divert focus away from the actual photographs that the app would contain. 
+                        We used this color palette as a guideline, 
+                        choosing colors to designate as the primary, secondary and accent colors respectively.
+                    </p>
+                    <img class="align-self-center img-fluid" src="colors.png" alt="5 colors in a row: midnight violet, chocolate plum, dry sage, bone, alabaster grey">
+                    <p class="m-3 text-center small fw-light">The website-generated color palette that we used as a guideline.</p>
+                    <p>
+                        Then, we began to alter the wireframe prototype, 
+                        being sure to incorporate feedback from the first round of usability testing and ensuring all interactions were in place. 
+                        The end result is the high-fidelity prototype below.
+                    </p>
+                    <h4><span class="subtitle fw-bolder">Our Solution</span></h4>
+                    <div class="row justify-content-center">
+                        <div class="col-4 m-3 justify-content-center">
+                            <video width="75%" height="100%" controls muted>
+                                <source src="Photographee.mp4" type="video/mp4">
+                                <source src="Photographee.mov" type="video/mov">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-4 m-3 justify-content-center">
+                            <video width="75%" height="100%" controls muted>
+                                <source src="Photographer.mp4" type="video/mp4">
+                                <source src="Photographer.mov" type="video/mov">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <!-- note to self videos messed up page layout with video speed controller extension on -->
+                        <!-- https://www.w3schools.com/html/html5_video.asp -->
+                        <!-- percentage sizes to fit different screens -->
+                    </div>
+                    <div class="row justify-content-center">
+                        <p class="col-4 m-3 text-center small fw-light">Video demo for photo subject view.</p>
+                        <p class="col-4 m-3 text-center small fw-light">Video demo for photographer view.</p>
+                    </div>
+                    <p>
+                        The two videos above are short demos of Phinder's functionality, 
+                        with the first representing a student's process of selecting and scheduling a photographer for a photoshoot request, 
+                        and the second representing that of receiving, accepting and completing a photoshoot request on the photographer's end.
+                    </p>
+                    <p>
+                        Below are two slides from our final presentation of the project, 
+                        where we showcase key changes made based on the feedback we received and data we collected from the wireframe uability testing. 
+                        Since users seemed satisfied with the overall functionality, these were mostly small aesthetic changes and additional features.
+                    </p>
+                    <div class="row">
+                        <img class="col m-3 align-self-center img-fluid" src="high-fidelity-1.png" alt="slide that shows improved calendar display and added photo link upload from wireframe to high-fidelity prototype">
+                        <img class="col m-3 align-self-center img-fluid" src="high-fidelity-2.png" alt="slide that shows additional fields in photographer profile and added messages screen from wireframe to high-fidelity prototype">
+                    </div>
+                    <img class="align-self-center img-fluid" src="high-fidelity-figma.png" alt="screenshot of the Figma canvas that the high-fidelity prototype was created in, showing all screens and interactions">
+                    <p class="m-3 text-center small fw-light">The Figma canvas showing all interactions in our high-fidelity prototype.</p>
+                    <h4><span class="subtitle fw-bolder">My Contribution</span></h4>
+                    <p>
+                        We completed this project as a group of three, splitting our responsibilities relatively evenly. 
+                        As such, each of us would conduct one or two interviews/usability testing sessions, 
+                        each of us had our own set of screens that we were responsible for. 
+                        Still, we coordinated well, 
+                        constantly and consistently communicating our processes and ideas so that the final design 
+                        (and other deliverables like our presentation and paper) 
+                        could be standardized across all of our individual work.
+                    </p>
+                    <p>
+                        Personally, I focused on reusable components: 
+                        particularly, I worked on the list of available photographers, 
+                        creating a component for each "user" (photographer or photo subject) display so that my teammates could use the same component in their own screens.
+                        Similarly, I also created a component for the calendar interface, 
+                        since it would be similar across the availability editing and timeslot booking screens - 
+                        my teammates were then able to use this component as needed. 
+                        I also created the two versions (photographer vs. photo subject) of the navigation bar, 
+                        ensuring that it successfully brought the user to their desired screen from most other screens.
+                    </p>
+                    <p>
+                        I also handled some small "elements of delight" for increased satisfaction, 
+                        such as a notification for confirmation of a user's action. 
+                        This component (and its relevant interactions) were attached to numerous screens in the app, wherever relevant.
+                    </p>
+                    <p>
+                        More generally, in addition to my own delegated set of responsibilities, 
+                        I feel I was able to help my team with the Figma controls and tools. 
+                        My teammates would at times encounter bugs that I was able to fix or give suggestions on, 
+                        since I'd grasped the hang of Figma relatively quickly through slight prior experience and online tutorials. 
+                        I believe this led to a smoother flow of the project overall, 
+                        with reduced time dedicated to fixing errors in Figma interactions.
+                    </p>
+                    <h4><span class="subtitle fw-bolder">Conclusion and Future Work</span></h4>
+                    <p>
+                        In our final round of testing (using the high-fidelity prototype), 
+                        we received greatly reduced feedback on missing features to be added and unresolved bugs. 
+                        It seems that users were satisfied with the product, 
+                        and a few users said that they would be willing to use Phinder in their everyday lives. 
+                    </p>
+                    <p>
+                        However, some points of improvement still remain. 
+                        The feedback from the last usability tests showed some small errors and inconvenience when using the app, 
+                        particularly in trying to find the button for uploading photos (from the photographer's perspective) 
+                        and trying to view the uploaded photos (from the photo subject's perspective). 
+                        Users would often first navigate to the Messages screen when trying to complete this task, 
+                        instead of accessing the correct screen (Booked Jobs) directly. 
+                        Hence, we added a new interaction to the Messages screen that navigates to the upload/view photos screen 
+                        (for the respective viewpoints), though this addition remains to be tested.
+                    </p>
+                    <div class="row justify-content-center">
+                        <img class="col-4 m-3 align-self-center img-fluid" src="submit photos.png" alt="messages screen showing a chat with a photo subject from the photographer's perspective, with the newly added 'submit photos' button on the bottom">
+                        <img class="col-4 m-3 align-self-center img-fluid" src="view photos.png" alt="messages screen showing a chat with a photographer from the photo subject's perspective, with the newly added 'view photos' button on the bottom">
+                    </div>
+                    <div class="row justify-content-center">
+                        <p class="col-4 m-3 text-center small fw-light">Photographers are now able to access the photo-upload feature through the messages screen.</p>
+                        <p class="col-4 m-3 text-center small fw-light">Photo subjects are now able to view the uploaded photos through the messages screen.</p>
+                    </div>
+                    <p>
+                        Other points of improvement include having the prototype be able to more accurately simulate a released product by replacing the placeholder names, adding real photographs and so on. 
+                        Additionally, some limitations of Figma (or perhaps our understanding of it) led to less-than-ideal prototyping: 
+                        for instance, users would have liked the ability to drag across the calendar interface to select multiple timeslots at once, 
+                        but we were unable to implement such an interaction in time.
+                    </p>
+                    <p>
+                        Altogether, though, Phinder seems to be a usable and appropriate solution for students in both of our target user populations. 
+                        The availability-focused scheduling system provides an avenue for busy students to coordinate meeting times, 
+                        and the app functions as a single centralized hub for searching for photographers, scheduling, commmunication and delivering the final photos; 
+                        this reduces greatly the risk of overlooking requests due to receiving them via multiple platforms.
+                    </p>
+                    <br>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer-->
+        <footer>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div>Copyright, Your Website 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

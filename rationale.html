@@ -1,0 +1,189 @@
+<html lang="en">
+    <head>
+        <title>CS220 Personal Portfolio - Megan Ho</title>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <main>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><h3 class="bi bi-house-door-fill"></h3></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Case Study Section-->
+            <section>
+                <div class="container">
+                    <div class="text-left fw-light text-gray p-2">
+                        <h5><i class="bi bi-chevron-left"></i> <a href="projects.html">Projects</a></h5>
+                    </div>
+                    <div class="text-center mb-5">
+                        <h2><span class="subtitle fs-2">Design Rationale: Personal Portfolio</span></h2>
+                    </div>
+                </div>
+                <div class="container text-left">
+                    <!-- Who are the intended users of this website? What are their goals? -->
+                    <h4><span class="subtitle fw-bolder">Users</span></h4>
+                    <p>
+                        The primary intended users of this website would be any potential future employers, 
+                        but the user population could extend to any colleague or classmate that wants to learn more about me and my interests. 
+                        This website would then allow them to learn relevant information about me, my experience and my skills, 
+                        focusing on my study in Computer Science and its related fields.
+                    </p>
+                    <!-- What usability dimensions did you prioritize in your design? Why? -->
+                    <h4><span class="subtitle fw-bolder">Usability Dimensions</span></h4>
+                    <p>
+                        I prioritized efficiency in the design of the website, 
+                        while also ensuring that other usability dimensions were satisfied.
+                    </p>
+                    <ul>
+                        <li>
+                            <b>Learnability & Memorability:</b> the website has its pages and the links that access them spelled out in full, 
+                            so users know which page they are navigating to when they click the various links on the website.
+                        </li>
+                        <li>
+                            <b>Efficiency:</b> all "main" pages are accessible from any other page through the navigation bar at the top of the website; 
+                            users can navigate to the relevant pages for its listed information whenever they wish to. 
+                            Some "secondary" pages (this rationale page, for instance) also have multiple access links: 
+                            this page can be reached from both the Home page and the Projects page. 
+                            Information on the pages is also presented as simply as possible, 
+                            so the user can easily understand the description on e.g. one of the project cards.
+                        </li>
+                        <li>
+                            <b>Satisfaction:</b> small satisfaction elements such as button and link hover colors are consistent across the website, 
+                            and relevant icons are present wherever appropriate.
+                        </li>
+                    </ul>
+                    <!-- Describe your design specifications. 1. What is your color scheme? Why did you choose it? 2. What layout did you use? Why? 3. What images did you include? Why? -->
+                    <h4><span class="subtitle fw-bolder">Design Specifications</span></h4>
+                    <h5><span class="subtitle">Color Scheme</span></h5>
+                    <p>
+                        I chose a dark blue for the primary color; 
+                        this choice is in part due to personal preference (darker themes are easier on the eyes for me), 
+                        but I also feel that while a dark blue gives off a proper and professional feeling, 
+                        the slight green tint of the color prevents it from being overly "cold."
+                    </p>
+                    <p>
+                        The secondary color is an even darker blue that makes use of Bootstrap's "dark" color scheme. 
+                        It is of a similar hue to the primary color of the website, so it does not seem out of place.
+                    </p>
+                    <p>
+                        The accent color is a pale yellow (mostly showing up as a gradient with white), 
+                        based on it being a complementary color of the primary color chosen. 
+                        The gradient creates greater visual interest in the webpages.
+                    </p>
+                    <p>
+                        Text color is mostly white to contrast with the dark background colors, and gray denotes less-important text in the page.
+                    </p>
+                    <h5><span class="subtitle">Layout</span></h5>
+                    <p>
+                        The layout is kept similar to that of the template: 
+                        mostly, information is presented in the form of cards on the page. 
+                        This allows information about any particular topic (one past work experience, one project etc.) to appear contained, 
+                        so it is easy to understand that this information all points to a single topic for each card.
+                    </p>
+                    <h5><span class="subtitle">Images</span></h5>
+                    <p>
+                        The Projects page contains images that are associated with the main topic of each project, 
+                        so it is easy at a glance to understand what kind of work I have done and am interested in doing.
+                    </p>
+                    <p>
+                        In the case study for the CS 220 final project, 
+                        I include images like the Figma canvas that showcase the process of creating our prototypes, 
+                        in addition to the video demo showcasing our app's full functionality. 
+                        This provides an easy visual representation of the app, so that users can understand more about the project.
+                    </p>
+                    <p>
+                        The image of myself on the Home page was chosen rather arbitrarily; 
+                        I figured that any picture of me that felt reasonably appropriate to show in a professional setting would be alright.
+                    </p>
+                    <!-- Technical discussion: how did you modify the starting template for your website and what resources did you use to develop your website? -->
+                    <h4><span class="subtitle fw-bolder">Template Modifications & Resources</span></h4>
+                    <p>
+                        Most changes made to the template were out of personal preference. 
+                        The changes to colors are for the reasons stated above, and I altered the positioning of elements in the pages slightly, 
+                        mostly concentrating elements closer to the center of the screen so that the user does not have to look across their entire screen to read the contents of the page 
+                        (this is most apparent in a back-to-back comparison of the Home pages).
+                    </p>
+                    <div class="row justify-content-center">
+                        <img class="col-5 m-3 align-self-center img-fluid" src="home page-1.png" alt="home page of this website">
+                        <img class="col-5 m-3 align-self-center img-fluid" src="home page-2.png" alt="home page of the template">
+                    </div>
+                    <div class="row justify-content-center">
+                        <p class="col-5 m-3 text-center small fw-light">This website's Home page.</p>
+                        <p class="col-5 m-3 text-center small fw-light">The template's Home page.</p>
+                    </div>
+                    <p>
+                        As shown above, the "About Me" section is cut off (due to the greater height of the image used), 
+                        so I added a small downward-pointing icon to indicate that the user can scroll further in the page.
+                    </p>
+                    <p>
+                        I also altered the cards to have more concentrated content for a similar reason. 
+                        The Skills section of the Resume page also no longer contains internal "pills" that house each individual skill, 
+                        since the color scheme change made them seem like clickable elements due to the high contrast. 
+                        I also added some information I felt could be relevant to potential users of the website, 
+                        such as dates of each project in the Projects page. 
+                        The Education section now includes a link to Wellesley's website, 
+                        rather than a text description, 
+                        since I feel the school can better speak for itself (though this also results in an extra click for the user - 
+                        I've attempted to mitigate this consequence by having the website open in a new browser tab).
+                    </p>
+                    <p>
+                        On resources used, I consulted w3schools for some unfamiliar HTML uses like embedding videos and having links open in a new tab, etc. 
+                        Images are either screenshots from our project or sourced royalty-free from Pixabay.
+                        Naturally, Bootstrap constitutes a significant resource used in this website as well. 
+                        One additional resource I should note is <a href="https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend">this StackOverflow discussion</a> - 
+                        there was a small area of white space on the right side of the page that bothered me slightly as it allowed the page to scroll sideways, 
+                        so I used the suggested solution to fix it.
+                    </p>
+                    <!-- Reflect on GenAI in web development: based on our class activity looking at GenAI code for web and any other experiences you may have had, reflect on what uses you find helpful with GenAI for web development and in what ways you find it unhelpful. -->
+                    <h4><span class="subtitle fw-bolder">GenAI in Web Development</span></h4>
+                    <p>
+                        While I prefer not to use it if I am able to find a solution on my own, 
+                        I think generative AI could potentially be helpful for ideation in layouts and color schemes, 
+                        as well as generating a basic template to reference while implementing the website. 
+                    </p>
+                    <p>
+                        However, as we realized in class, generative AI HTML code will sometimes contain errors that can be varyingly difficult to identify and fix by hand. 
+                        Using such tools to generate the website also forms a barrier to understanding more complex parts of the code, 
+                        which makes maintenance of the website difficult - if we do not understand the AI code output, 
+                        we will have trouble finding the appropriate part of the code to update.
+                    </p>
+                    <br>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer-->
+        <footer>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div>Copyright, Your Website 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
